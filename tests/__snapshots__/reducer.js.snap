@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer Should combine reducers 1`] = `
+Object {
+  "foo": Object {
+    "counter": NaN,
+    "data": Object {},
+    "isPending": 0,
+  },
+  "mock": Object {
+    "counter": NaN,
+    "data": Object {},
+    "isPending": 0,
+  },
+}
+`;

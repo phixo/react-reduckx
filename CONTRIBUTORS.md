@@ -1,0 +1,5 @@
+# Authors
+
+- Maurice Bartnig
+
+# Contributors

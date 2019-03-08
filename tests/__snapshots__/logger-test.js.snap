@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducks | logger Should log the action to the console 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "%cprev state",
+      "color: #9E9E9E;",
+      Object {
+        "foo": "bar",
+      },
+    ],
+    Array [
+      "%caction    ",
+      "color: #03A9F4;",
+      Object {
+        "type": "MOCK-ACTION",
+      },
+    ],
+    Array [
+      "%cnext state",
+      "color: #4CAF50;",
+      Object {
+        "foo": "baz",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
