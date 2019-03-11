@@ -78,7 +78,6 @@
     "react-dom": "16.8.3",
     "react-hooks-testing-library": "0.3.6",
     "react-test-renderer": "16.8.3",
-    "release-script": "1.0.2",
     "reselect": "^4.0.0",
     "rimraf": "2.6.3"
   },
