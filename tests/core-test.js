@@ -7,10 +7,10 @@ import {
     act as actHook,
 } from 'react-hooks-testing-library';
 
-import mockAxios from '../__mocks__/axios';
-import { actionsMap, mapState } from '../__mocks__/defaults';
-import MockContainer from '../__mocks__/container';
-import { ReduxProvider, useRedux } from '../__mocks__/store';
+import mockAxios from './__mocks__/mock-axios';
+import { actionsMap, mapState } from './__mocks__/defaults';
+import MockContainer from './__mocks__/container';
+import { ReduxProvider, useRedux } from './__mocks__/store';
 
 const mockReduckx = {
     dispatch: jest.fn(),

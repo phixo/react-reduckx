@@ -1,10 +1,10 @@
-import mockAxios from '../__mocks__/axios';
-import { ACTION_ASYNC } from '../__mocks__/action-types';
+import mockAxios from './__mocks__/mock-axios';
+import { ACTION_ASYNC } from './__mocks__/action-types';
 
 import {
     mockAsyncActionSuccess,
     mockAsyncActionFail,
-} from '../__mocks__/actions';
+} from './__mocks__/actions';
 
 const reduxArgs = {
     getState: jest.fn(),

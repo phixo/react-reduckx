@@ -1,4 +1,4 @@
-import { createAsyncActionReducers, createReducer } from '../src';
+import { createAsyncActionReducers, createReducer } from '../../src';
 import { ACTION_SYNC, ACTION_ASYNC } from './action-types';
 
 export const initialState = {

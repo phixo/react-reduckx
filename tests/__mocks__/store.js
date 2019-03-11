@@ -1,4 +1,4 @@
-import { combineReducers, createStore } from '../src';
+import { combineReducers, createStore } from '../../src';
 import mockReducer, { initialState as mockState } from './reducers';
 
 const rootReducer = combineReducers({

@@ -1,6 +1,6 @@
 import { combineReducers, reduceWith } from '../src';
-import { mockSyncAction } from '../__mocks__/actions';
-import mockReducer, { initialState } from '../__mocks__/reducers';
+import { mockSyncAction } from './__mocks__/actions';
+import mockReducer, { initialState } from './__mocks__/reducers';
 
 const test = {
     reduceFn: jest.fn(),
