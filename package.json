@@ -21,8 +21,8 @@
         "toolkit"
     ],
     "scripts": {
-        "build": "babel src --out-dir dist && cp LICENSE README.md ./dist",
-        "prebuild": "rimraf dist",
+        "build": "clean && babel src --out-dir dist && cp LICENSE README.md ./dist",
+        "clean": "rimraf dist",
         "commit": "git-cz",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
