@@ -1,15 +1,22 @@
+sudo: false
+
 language: node_js
 
 node_js:
     - '10'
 
+notifications:
+    email: false
+
 cache:
+    yarn: true
     directories:
-        - $HOME/.npm
-        - $HOME/.yarn-cache
         - node_modules
 
 install: yarn
 
 script:
     - yarn test:ci
+
+after_success:
+    - yarn semantic-release
