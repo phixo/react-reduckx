@@ -1,5 +1,5 @@
 # Changelog
 
-## v1.0.0-beta.1 (08-03-2019)
+## 1.0.0
 
--   First beta release
+-   First release
