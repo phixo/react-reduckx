@@ -1,6 +1,6 @@
 # react-reduckx
 
-[![Build Status](https://travis-ci.org/phixo/react-reduckx.svg?branch=master)](https://travis-ci.org/phixo/react-reduckx) [![codecov](https://codecov.io/gh/phixo/react-reduckx/branch/master/graph/badge.svg)](https://codecov.io/gh/phixo/react-reduckx) [![david-dm](https://david-dm.org/phixo/react-reduckx.svg)](https://david-dm.org/phixo/react-reduckx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Build Status](https://travis-ci.org/phixo/react-reduckx.svg?branch=master)](https://travis-ci.org/phixo/react-reduckx) [![codecov](https://codecov.io/gh/phixo/react-reduckx/branch/master/graph/badge.svg)](https://codecov.io/gh/phixo/react-reduckx) [![david-dm](https://david-dm.org/phixo/react-reduckx.svg)](https://david-dm.org/phixo/react-reduckx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/phixo/react-reduckx.svg)](https://greenkeeper.io/)
 
 🦆 A lightweight and powerful Redux kit to easily manage state in React applications 🦆
 
