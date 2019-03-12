@@ -16,7 +16,7 @@ cache:
 branches:
     only:
         - master
-        - /^greenkeeper.*$/
+        - /^greenkeeper/.*$/
 
 before_install: yarn global add greenkeeper-lockfile@1
 
