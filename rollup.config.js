@@ -15,6 +15,7 @@ const config = {
         name: 'ReactReduckx',
         globals: {
             react: 'React',
+            'prop-types': 'PropTypes',
         },
     },
     plugins: [
