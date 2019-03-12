@@ -13,10 +13,16 @@ cache:
     directories:
         - node_modules
 
+before_install: yarn global greenkeeper-lockfile@1
+
 install: yarn
+
+before_script: greenkeeper-lockfile-update
 
 script:
     - yarn test:ci
+
+after_script: greenkeeper-lockfile-upload
 
 after_success:
     - yarn semantic-release
