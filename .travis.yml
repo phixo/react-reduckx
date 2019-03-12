@@ -29,5 +29,7 @@ script:
 
 after_script: greenkeeper-lockfile-upload
 
-after_success:
+before_script: yarn run build
+
+script:
     - yarn semantic-release

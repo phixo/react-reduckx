@@ -105,11 +105,11 @@ export { FETCH_USERS };
 
 ```js
 // actions.js
-import { asyncAction } from 'react-reduckx';
+import { createAsyncAction } from 'react-reduckx';
 import { FETCH_USERS } from './action-types';
 
 // Create an async action to fetch users
-const fetchUsers = asyncAction(FETCH_USERS, req =>
+const fetchUsers = createAsyncAction(FETCH_USERS, req =>
     req.get('https://jsonplaceholder.typicode.com/users')
 );
 
@@ -118,7 +118,7 @@ export { fetchUsers };
 
 ```js
 // reducers.js
-import { asyncActionReducer, createReducer } from 'react-reduckx';
+import { createAsyncActionReducer, createReducer } from 'react-reduckx';
 import { FETCH_USERS } from './action-types';
 
 const initialState = {
@@ -127,11 +127,11 @@ const initialState = {
 };
 
 // Define our 'user' state reducer methods, based on action-type.
-// asyncActionReducer will create async action-types:
+// createAsyncActionReducer will create async action-types:
 // FETCH_USERS_PENDING, FETCH_USERS_SUCCESS, FETCH_USERS_FAIL
 // One can add (sub) reducers with: onPending, onSuccess, onFail
 const actionsMap = {
-    ...asyncActionReducer(FETCH_USERS, {
+    ...createAsyncActionReducer(FETCH_USERS, {
         onSuccess: (state, { payload }) => ({
             items: payload,
         }),
