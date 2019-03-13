@@ -1,7 +1,7 @@
 {
     "name": "react-reduckx",
     "version": "0.0.0-semantically-released",
-    "description": "A lightweight and powerful Redux kit to easily manage state in React applications",
+    "description": "🦆 A lightweight Redux kit to manage state in React applications with ease 🦆",
     "main": "./lib/index.js",
     "repository": {
         "type": "git",

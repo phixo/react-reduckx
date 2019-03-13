@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/react-reduckx.png)](https://nodei.co/npm/react-reduckx/)
 
-🦆 A lightweight and powerful Redux kit to easily manage state in React applications 🦆
+🦆 A lightweight Redux kit to manage state in React applications with ease 🦆
 
 [Installation](#installation) |
 [Background](#background) |
@@ -16,17 +16,13 @@
 With [npm](https://npmjs.org/) installed, run
 
 ```
-
-\$ npm install react-reduckx
-
+npm install react-reduckx
 ```
 
 Or with [yarn](https://yarnpkg.com/) installed, run
 
 ```
-
-\$ yarn add react-reduckx
-
+yarn add react-reduckx
 ```
 
 ### Peer dependencies
@@ -42,7 +38,7 @@ To create state selectors, add [reselect](https://github.com/reduxjs/reselect) t
 
 ## Background
 
-While developing large-scale React applications, state-management can become messy and hard to follow where it flows. Whilst there are many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can become quite large in bundle-size and leaning too much on 3rd party dependencies.
+While developing large-scale React applications, state-management can become messy and hard to follow where it flows. Whilst there are many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can rely too much on 3rd party dependencies.
 With `react-reduckx` you get the nescessary bits of these dependencies in one small single toolkit!
 
 ## Usage
@@ -50,9 +46,9 @@ With `react-reduckx` you get the nescessary bits of these dependencies in one sm
 ### Store
 
 Start by creating a store file in your project. The store initially needs to be feeded with reducer methods and the initial state of the application.
-Be sure to export the `ReduxProvider` and the `useRedux`-[hook](https://reactjs.org/docs/hooks-intro.html) that the store creates.
+Be sure to export the `ReduxProvider` and the `useRedux`-[hook](https://reactjs.org/docs/hooks-intro.html) that the store outputs.
 
-Note: For the sake of showing that one can combine reducers, the store file below shows how to combine `profile` and `users` into a single reducer. We continue the example with only using `users`.
+Note: For the sake of showing that one can combine mulitple reducers, the following store file shows how to combine `profile` and `users` into a single reducer. We continue the example with only using `users`.
 
 ```js
 // store.js
@@ -105,12 +101,15 @@ export { FETCH_USERS };
 
 ```js
 // actions.js
+import axios from 'axios';
 import { createAsyncAction } from 'react-reduckx';
 import { FETCH_USERS } from './action-types';
 
 // Create an async action to fetch users
-const fetchUsers = createAsyncAction(FETCH_USERS, req =>
-    req.get('https://jsonplaceholder.typicode.com/users')
+// This example uses axios to fetch our data, but can be
+// any promised-based HTTP client.
+const fetchUsers = createAsyncAction(FETCH_USERS, () =>
+    axios.get('https://jsonplaceholder.typicode.com/users')
 );
 
 export { fetchUsers };
