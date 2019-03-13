@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 import Logger from '../src/logger';
 
+import { mockSyncAction } from './__mocks__/actions';
+
 describe('Reducks | logger', () => {
-    const mockAction = {
-        type: 'MOCK-ACTION',
-    };
+    const mockAction = mockSyncAction();
 
     const mockPrevState = {
         foo: 'bar',

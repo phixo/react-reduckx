@@ -14,7 +14,8 @@ exports[`Reducks | logger Should log the action to the console 1`] = `
       "%caction    ",
       "color: #03A9F4;",
       Object {
-        "type": "MOCK-ACTION",
+        "payload": undefined,
+        "type": "MOCK/ACTION_SYNC",
       },
     ],
     Array [
