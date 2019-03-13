@@ -1,6 +1,6 @@
 import createStore from './store';
 import { createAsyncAction, createAsyncActionReducers } from './async';
-import { combineReducers, createReducer } from './reducer';
+import { combineReducers, createReducer, reduceWith } from './reducer';
 
 export {
     combineReducers,
@@ -8,4 +8,5 @@ export {
     createAsyncActionReducers,
     createReducer,
     createStore,
+    reduceWith,
 };
