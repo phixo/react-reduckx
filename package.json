@@ -45,8 +45,8 @@
     },
     "peerDependencies": {
         "prop-types": "^15.7.2",
-        "react": "^16.8.3",
-        "react-dom": "^16.8.3"
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",
@@ -74,8 +74,8 @@
         "path-to-regexp": "^3.0.0",
         "prettier": "^1.16.4",
         "prop-types": "^15.7.2",
-        "react": "^16.8.3",
-        "react-dom": "^16.8.3",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
         "react-hooks-testing-library": "^0.3.6",
         "react-test-renderer": "^16.8.3",
         "reselect": "^4.0.0",

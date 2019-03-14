@@ -31,8 +31,8 @@ This library uses the following peer dependencies, which will probably already
 be included in your project while it's using React
 
 -   [prop-types](https://github.com/facebook/prop-types): 15.7.2
--   [react](https://github.com/facebook/react): 16.8.3
--   [react-dom](https://github.com/facebook/react/tree/master/packages/react-dom): 16.8.3
+-   [react](https://github.com/facebook/react): 16.8.4
+-   [react-dom](https://github.com/facebook/react/tree/master/packages/react-dom): 16.8.4
 
 To create state selectors, add [reselect](https://github.com/reduxjs/reselect) to your project. It comes with state memoization out of the box.
 
