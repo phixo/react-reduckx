@@ -38,7 +38,7 @@ To create state selectors, add [reselect](https://github.com/reduxjs/reselect) t
 
 ## Background
 
-While developing large-scale React applications, state-management can become messy and hard to follow where data flows. Although there's many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can rely too much on 3rd party dependencies.
+While developing large-scale React applications, state-management can become messy and hard to follow where data flows. Although there's many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can really grow big and will lean too much on 3rd party dependencies.
 With `react-reduckx` you get the nescessary bits of these dependencies in one small single toolkit!
 
 ## Usage
