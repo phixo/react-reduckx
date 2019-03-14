@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/react-reduckx.png)](https://nodei.co/npm/react-reduckx/)
 
-🦆 A lightweight Redux kit to manage state in React applications with ease 🦆
+🦆 A lightweight Redux kit to manage state in React applications with ease
 
 [Installation](#installation) |
 [Background](#background) |
@@ -38,7 +38,7 @@ To create state selectors, add [reselect](https://github.com/reduxjs/reselect) t
 
 ## Background
 
-While developing large-scale React applications, state-management can become messy and hard to follow where it flows. Whilst there are many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can rely too much on 3rd party dependencies.
+While developing large-scale React applications, state-management can become messy and hard to follow where data flows. Although there's many good solutions like: [redux](https://github.com/reduxjs/redux), [react-redux](https://github.com/reduxjs/react-redux) combined with middlewares like [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-logger](https://github.com/LogRocket/redux-logger) and so on, your project can rely too much on 3rd party dependencies.
 With `react-reduckx` you get the nescessary bits of these dependencies in one small single toolkit!
 
 ## Usage
@@ -73,9 +73,9 @@ export const { ReduxProvider, useRedux } = createStore(
 );
 ```
 
-### Setting up your ducks 🦆
+### Setting up your ducks 🦆🦆
 
-Ducks are your actors of choice in `react-reduckx`. Let's say, we have an `users` state branch and we want to fire an action related to `users` in our app and reduce the state when it resolves (or not). As a result we also want to use these state changes in our React components, by using `selectors`.
+Ducks are your actors of choice in `react-reduckx`. Let's say, we have a `users` state branch and we want to fire a user related action in our app and reduce the state when it resolves (or not). As a result we also want to use these state changes in our React components, by using `selectors`.
 Toss in a `users` folder and create the following files:
 
 ```
