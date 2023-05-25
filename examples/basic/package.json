@@ -6,15 +6,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-reduckx": "1.0.1",
-    "react-scripts": "4.0.0",
-    "snyk": "^1.437.3"
+    "react-scripts": "5.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "yarn run snyk-protect"
   },
   "eslintConfig": {
